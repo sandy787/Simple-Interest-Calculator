@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Clayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4571F3"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="354dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Simple Interest Calculator"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="383dp"
+            android:layout_height="545dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.48000002">
+
+            <EditText
+                android:id="@+id/Principal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Enter Principle Amount in Rs"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/Interest"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Enter Interest Rate"
+                android:inputType="numberDecimal"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/Time"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Enter Time in Years"
+                android:inputType="numberDecimal"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/hlayout"
+                android:layout_width="349dp"
+                android:layout_height="141dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="#6D8FF1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simple Interest = Rs"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#ECA235"
+                android:text="CALCULATE"
+                android:textColor="#000000"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#ECA235"
+                android:text="RESET"
+                android:textColor="#000000"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
